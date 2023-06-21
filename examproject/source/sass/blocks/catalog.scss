@@ -1,0 +1,111 @@
+.catalog {
+  background-color: rgba(248, 248, 248, 1);
+  padding: 50px 20px 36px 20px;
+
+  @media (min-width: 768px) {
+    padding-top: 80px;
+    padding-bottom: 70px;
+  }
+
+  @media (min-width: 1440px) {
+    padding: 102px 40px 100px 40px;
+  }
+}
+
+.catalog__title-promo {
+  padding: 0;
+  margin: 0 auto;
+  text-transform: uppercase;
+  color: rgba(120, 89, 207, 1);
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  margin-bottom: 5px;
+
+  @media (min-width: 1440px) {
+    margin-bottom: 3px;
+  }
+}
+
+.catalog__title {
+  padding: 0;
+  margin: 0 auto;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  margin-bottom: 20px;
+
+  @media (min-width: 768px) {
+    font-size: 42px;
+    line-height: 64px;
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: 1440px) {
+    margin-bottom: 40px;
+  }
+}
+
+.catalog__wrapper {
+  @media (min-width: 1440px) {
+    display: grid;
+    grid-template-columns: 318px 1011px;
+    gap: 30px;
+  }
+}
+
+.catalog__form {
+  @media (min-width: 1440px) {
+    width: 318px;
+    grid-area: 1;
+  }
+}
+
+.catalog__sorting-wrapper {
+  margin: 0 auto;
+  padding-top: 6px;
+  display: flex;
+  margin-bottom: 19px;
+
+  @media (min-width: 768px) {
+    padding: 0;
+    margin: 0;
+    justify-content: end;
+    margin-bottom: 29px;
+  }
+}
+
+.catalog__sorting-title {
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  margin-right: 18px;
+}
+
+.catalog__sorting-selection {
+  font-family: "Montserrat", "Arial", sans-serif;
+  border-style: none;
+  color: rgba(120, 89, 207, 1);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  background-color: rgba(248, 248, 248, 1);
+  appearance: none;
+  padding-right: 11px;
+  position: relative;
+  background-image: url("../../img/icons/stack.svg#arrow-selection");
+  background-size: 10px 10px;
+  background-repeat: no-repeat;
+  background-position: right 20px center;
+  cursor: pointer;
+
+  @media (min-width: 768px) {
+    padding: 0;
+    margin: 0;
+    background-position: right 9px center;
+  }
+}

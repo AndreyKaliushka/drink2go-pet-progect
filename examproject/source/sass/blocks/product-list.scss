@@ -1,0 +1,141 @@
+.product-list {
+  margin: 0 auto;
+  padding: 0;
+  list-style-type: none;
+  margin-bottom: 38px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 70px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+
+  @media (min-width: 1440px) {
+    margin-bottom: 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+  }
+}
+
+.product-list__card {
+  background-color: rgba(255, 255, 255, 1);
+  padding: 40px 20px 20px 20px;
+  box-sizing: border-box;
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+
+    @media (min-width: 768px) {
+      margin: 0;
+    }
+  }
+
+  @media (min-width: 768px) {
+    margin: 0;
+    padding: 50px 30px 30px 30px;
+    width: 349px;
+  }
+
+  @media (min-width: 1440px) {
+    width: 317px;
+  }
+}
+
+.product-list__link {
+  box-sizing: border-box;
+  display: block;
+  text-align: center;
+}
+
+.product-list__link--title {
+  text-align: start;
+}
+
+.product-list__picture {
+  margin: 0;
+  object-fit: cover;
+  height: 100%;
+  margin-bottom: 19px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 26px;
+  }
+}
+
+.product-list__title {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  line-height: 32px;
+  margin-bottom: 4px;
+
+  @media (min-width: 768px) {
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 9px;
+  }
+}
+
+.product-list__description {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 16px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 20px;
+  }
+}
+
+.product-list__wrapper {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.product-list__price {
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 32px;
+}
+
+.product-list__button {
+  background-color: rgba(120, 89, 207, 1);
+  color: rgba(255, 255, 255, 1);
+  padding: 8px 20px 8px 46px;
+  font-size: 14px;
+  line-height: 20px;
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 20px;
+    height: 16px;
+    background-image: url("../../img/icons/stack.svg#button-basket");
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 20px;
+    top: 10px;
+  }
+
+  &:hover {
+    background-color: rgba(144, 112, 236, 1);
+  }
+
+  &:focus {
+    background-color: rgba(144, 112, 236, 1);
+  }
+
+  &:active {
+    background-color: rgba(89, 60, 172, 1);
+  }
+
+  &:disabled {
+    background-color: rgba(189, 189, 189, 1);
+  }
+}

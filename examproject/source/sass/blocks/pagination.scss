@@ -1,0 +1,138 @@
+.pagination {
+  display: flex;
+  flex-wrap: wrap;
+
+  @media (min-width: 768px) {
+    margin-left: auto;
+    justify-content: end;
+  }
+}
+
+.pagination__button {
+  padding: 0;
+  margin: 0;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 1);
+  position: relative;
+  text-align: center;
+  fill: rgba(120, 89, 207, 1);
+
+  @media (min-width: 768px) {
+    width: auto;
+    color: rgba(120, 89, 207, 1);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  &:hover {
+    background-color: rgba(144, 112, 236, 1);
+    fill: rgba(255, 255, 255, 1);
+    color: rgba(255, 255, 255, 1);
+  }
+
+  &:focus {
+    background-color: rgba(144, 112, 236, 1);
+    fill: rgba(255, 255, 255, 1);
+    color: rgba(255, 255, 255, 1);
+  }
+
+  &:active {
+    background-color: rgba(89, 60, 172, 1);
+  }
+
+  &:disabled {
+    background-color: rgba(226, 226, 226, 1);
+  }
+}
+
+.pagination__button-icon {
+  padding: 15px;
+  fill: rgba(120, 89, 207, 1);
+  display: block;
+
+  &:hover {
+    fill: rgba(255, 255, 255, 1);
+  }
+
+  &:disabled {
+    fill: rgba(255, 255, 255, 1);
+  }
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
+.pagination__button span {
+  @media (max-width: 767px) {
+    display: none;
+  }
+
+  @media (min-width: 768px) {
+    padding: 8px 20px;
+    display: block;
+  }
+}
+
+.pagination__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  text-align: center;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.pagination__item {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 24px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+
+  &:not(:last-child) {
+    margin-right: 20px;
+  }
+}
+
+.pagination__item .pagination__link--current {
+  font-weight: 600;
+  color: rgba(51, 51, 51, 1);
+  background-color: rgba(248, 248, 248, 1);
+}
+
+.pagination__link {
+  display: block;
+  color: rgba(120, 89, 207, 1);
+  min-width: 24px;
+  min-height: 24px;
+  padding: 8px;
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 4px;
+
+  &:hover:not(.pagination__link--current) {
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(144, 112, 236, 1);
+  }
+
+  &:focus:not(.pagination__link--current) {
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(144, 112, 236, 1);
+  }
+
+  &:active:not(.pagination__link--current) {
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(89, 60, 172, 1);
+  }
+
+  &:disabled {
+    color: rgba(189, 189, 189, 1);
+  }
+}
