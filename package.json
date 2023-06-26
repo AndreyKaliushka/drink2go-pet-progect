@@ -37,7 +37,7 @@
     "start": "gulp runDev",
     "build": "gulp buildProd",
     "preview": "gulp buildProd && gulp startServer",
-    "predeploy": "npm run build","deploy": "gh-pages -d gh-build"
+    "predeploy": "npm run build","deploy": "gh-pages -d for-deploy-build"
   },
   "browserslist": [
     "last 2 versions",
