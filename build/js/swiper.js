@@ -1,1 +1,0 @@
-const swiper=new Swiper(".swiper",{loop:!0,pagination:{el:".swiper__pagination",clickable:!0},navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev"}});export{swiper};
